@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <header class="header">
-      <h1>Hello Vue SPA</h1>
+      <h1><img src="./assets/logo.png" alt="logo" height="50" width="50"/>Hello Vue SPA</h1>
     </header>
     <main>
       <aside class="sidebar">
