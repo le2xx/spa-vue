@@ -1,5 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
+import Post from './Post.vue'
+import Hello from './Hello.vue'
 import VueResource from 'vue-resource'
 import Router from 'vue-router'
 
@@ -24,5 +26,6 @@ const router = new Router({
 
 new Vue({
   el: '#app',
-  render: h => h(App)
+  render: h => h(App),
+  router
 })
