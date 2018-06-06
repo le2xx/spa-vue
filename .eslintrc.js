@@ -1,4 +1,4 @@
-export default {
+module.exports = {
     "env": {
         "browser": true,
         "es6": true,
@@ -8,6 +8,7 @@ export default {
     "parserOptions": {
         "sourceType": "module"
     },
+    "plugins": ["babel"],
     "rules": {
         "indent": [
             "error",
@@ -24,6 +25,10 @@ export default {
         "semi": [
             "error",
             "always"
-        ]
+        ],      
+        'import/no-extraneous-dependencies': ['error', {
+            devDependencies: true,
+            optionalDependencies: false,
+        }],
     }
 }
